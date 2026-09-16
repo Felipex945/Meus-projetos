@@ -1,0 +1,23 @@
+De número para string -> String(n) ou n.to.String()
+
+De string para número inteiro -> Number.parseInt()
+De string para número Real -> Number.parseFloat()
+De acordo com a resposta do usuário > Number()
+
+template string -> let idade = '14'
+                let nome = 'Felipe'
+                `Tenho ${idade} anos e me chamo ${nome}` //Sempre entre crases
+
+
+Formatação de string -> s.length //indica quantos caracteres possui
+                        s.toUpperCase() //Transforma tudo em maiúsculo
+                        s.toLowerCase() //Transforma tudo em minúsculo
+
+Formatação de número -> let n1 = 1543.5
+                        n1.toFixed(2)
+                        saída: 1543.50
+
+                        n1 = 232
+                        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+                        saída: R$ 232,00
+                

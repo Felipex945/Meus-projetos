@@ -1,0 +1,4 @@
+Operadores aritiméticos -> +  -  *  /  %  **
+
+Ordem de precedência   () --> ** --> *, /, % --> +, - 
+                        

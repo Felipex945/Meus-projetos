@@ -1,0 +1,29 @@
+#!/bin/bash
+
+echo "CÁCULO DE MULTIPLICAÇÃO E DIVISÃO"
+echo "================================="
+
+#Recenbendo o primeiro número
+echo "Digite o primeiro número"
+read numero_1
+
+#Recebendo o segundo
+echo "Digite o segundo número"
+read numero_2
+
+#Multiplicação ou divisão
+echo "Digite 1 para multiplicá-los ou 2 para dividí-los"
+read opcao
+
+#Definindo as funções
+multiplicacao=$(( numero_1 * numero_2 ))
+divisao=$(( numero_1 / numero_2 ))
+
+#Fazendo as condicões
+if [ "$opcao" -eq 1 ]; then
+	echo "O $numero_1 vezes $numero_2 = $multiplicacao"
+elif [ "$opcao" -eq 2 ]; then
+	echo "O $numero_1 dividido por $numero_2 = $divisao"
+else
+	echo "operação inválida"
+fi

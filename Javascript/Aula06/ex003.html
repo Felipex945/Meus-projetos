@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa!</title>
+    <style>
+        body {
+            background-color: rgb(116, 116, 168);
+            color: rgb(255, 255, 255);
+            font: normal 25px Arial;
+        }
+        h1 {
+            color: rgb(250, 250, 115);
+        }
+
+    </style>
+</head>
+<body> 
+        <h1>Olá, mundo!</h1>
+        <p>Calculadora!</p>
+        <script>
+            let n1 = Number(window.prompt('Digite um número: '))
+            let n2 = Number(window.prompt('Digite outro número: '))
+            let soma = n1 + n2
+            window.alert(`A soma dos valores ${n1} e ${n2} é ${soma}`) // Concatenação
+        </script>
+</body>
+</html>

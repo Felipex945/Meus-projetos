@@ -1,0 +1,14 @@
+h1 {
+            font-family: Arial;
+            font-size: 30pt;
+            color: rgb(79, 39, 2);
+            text-shadow: 2px 2px 2px black
+        }
+
+h2 {
+    font-family: Serif;
+    font-size: 20pt;
+    color: aliceblue;
+    text-shadow: 3px 3px 3px blue;
+
+}

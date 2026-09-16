@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Auto | Tecnologia e Performance em Movimento</title>
+    
+    <!-- Tailwind CSS CDN para estilização moderna e rápida -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            scroll-behavior: smooth;
+        }
+
+        /* Efeito de iluminação nos cards */
+        .card-glow {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+        .card-glow:hover {
+            transform: translateY(-5px);
+            border-color: rgba(59, 130, 246, 0.8);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
+        }
+
+        /* Gradiente do Título */
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #60a5fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Cabeçalho / Navegação -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-extrabold tracking-wider text-white">APEX <span class="text-blue-500">AUTO</span></h1>
+                <p class="text-xs text-slate-400">Desenvolvido por Felipe</p>
+            </div>
+            
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold">
+                <a href="#proposta" class="hover:text-blue-400 transition">Nossa Proposta</a>
+                <a href="#carros" class="hover:text-blue-400 transition">Nossos Carros</a>
+                <a href="#economia" class="hover:text-blue-400 transition">Dados Econômicos</a>
+                <a href="#porque" class="hover:text-blue-400 transition">Por que Escolher?</a>
+            </nav>
+
+            <a href="#carros" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg text-sm transition">
+                Ver Modelos
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Destaque Principal) -->
+    <section class="relative py-20 px-4 text-center bg-gradient-to-b from-slate-900 to-[#0b0f19]">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <span class="text-blue-500 font-semibold tracking-widest text-sm uppercase">O futuro está no passado</span>
+            <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+                Tecnologia e Performance em <span class="gradient-text">Movimento</span>
+            </h2>
+            <p class="text-slate-400 text-base md:text-lg max-w-2xl mx-auto">
+                Aqui você encontra veículos modernos e preparados com a melhor engenharia do mercado pelo preço justo.
+            </p>
+            <div class="flex justify-center gap-4 pt-4">
+                <a href="#carros" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition">Explorar Catálogo</a>
+                <a href="#proposta" class="border border-slate-700 hover:bg-slate-800 text-slate-300 font-semibold py-3 px-6 rounded-lg transition">Conhecer Proposta</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa Proposta / Sobre -->
+    <section id="proposta" class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="bg-slate-900 rounded-2xl p-8 md:p-12 border border-slate-800">
+            <h3 class="text-2xl font-bold text-white mb-4">Nossa Proposta</h3>
+            <p class="text-slate-300 leading-relaxed mb-6">
+                A <strong>Apex Auto</strong> surge com o objetivo de conectar inovação, elegância e acessibilidade no setor automobilístico. Selecionamos rigorosamente veículos top de linha das melhores marcas globais (Hyundai, Volkswagen, Chevrolet e Fiat) para oferecer segurança, alto desempenho e o melhor custo-benefício aos nossos clientes.
+            </p>
+        </div>
+    </section>
+
+    <!-- Catálogo de Carros -->
+    <section id="carros" class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-white">Nossos Carros Top de Linha</h2>
+            <p class="text-slate-400 mt-2">Escolha o modelo ideal para o seu estilo de vida</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Hyundai Creta Ultimate -->
+            <div class="bg-slate-900 rounded-xl overflow-hidden card-glow">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">Hyundai</span>
+                    <h3 class="text-xl font-bold text-white mt-1">Creta Ultimate</h3>
+                    <p class="text-slate-400 text-sm mt-2">1.6 Turbo GDI (193 cv) | 0 a 100 km/h em 7,6s</p>
+                    <ul class="text-xs text-slate-300 mt-4 space-y-1">
+                        <li>• Teto Solar Panorâmico</li>
+                        <li>• Painel Digital & Central 10,25"</li>
+                        <li>• Pacote ADAS Completo</li>
+                    </ul>
+                    <div class="mt-6 flex items-center justify-between">
+                        <span class="text-lg font-bold text-white">R$ 198.120</span>
+                        <button onclick="solicitarInfo('Hyundai Creta Ultimate')" class="bg-slate-800 hover:bg-blue-600 text-xs text-white px-3 py-2 rounded transition">Tenho Interesse</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hyundai Tucson Ultimate -->
+            <div class="bg-slate-900 rounded-xl overflow-hidden card-glow">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">Hyundai</span>
+                    <h3 class="text-xl font-bold text-white mt-1">Tucson Ultimate</h3>
+                    <p class="text-slate-400 text-sm mt-2">1.6 Turbo GDI (177 cv) | Porta-malas 513L</p>
+                    <ul class="text-xs text-slate-300 mt-4 space-y-1">
+                        <li>• Câmbio Dupla Embreagem 7 marchas</li>
+                        <li>• Espaço Interno Amplo</li>
+                        <li>• Consumo Estrada: 12,2 km/l</li>
+                    </ul>
+                    <div class="mt-6 flex items-center justify-between">
+                        <span class="text-lg font-bold text-white">R$ 184.490</span>
+                        <button onclick="solicitarInfo('Hyundai Tucson Ultimate')" class="bg-slate-800 hover:bg-blue-600 text-xs text-white px-3 py-2 rounded transition">Tenho Interesse</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VW T-Cross Highline -->
+            <div class="bg-slate-900 rounded-xl overflow-hidden card-glow">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">Volkswagen</span>
+                    <h3 class="text-xl font-bold text-white mt-1">T-Cross Highline (250 TSI)</h3>
+                    <p class="text-slate-400 text-sm mt-2">1.4 Turbo (150 cv) | Câmbio Automático 6 marchas</p>
+                    <ul class="text-xs text-slate-300 mt-4 space-y-1">
+                        <li>• Posição de dirigir elevada</li>
+                        <li>• Velocidade Máxima: 202 km/h</li>
+                        <li>• Porta-malas ajustável até 420L</li>
+                    </ul>
+                    <div class="mt-6 flex items-center justify-between">
+                        <span class="text-lg font-bold text-white">R$ 184.490</span>
+                        <button onclick="solicitarInfo('VW T-Cross Highline')" class="bg-slate-800 hover:bg-blue-600 text-xs text-white px-3 py-2 rounded transition">Tenho Interesse</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VW Nivus Highline -->
+            <div class="bg-slate-900 rounded-xl overflow-hidden card-glow">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">Volkswagen</span>
+                    <h3 class="text-xl font-bold text-white mt-1">Nivus Highline (200 TSI)</h3>
+                    <p class="text-slate-400 text-sm mt-2">1.0 Turbo (128 cv) | Estilo Cupê Urbano</p>
+                    <ul class="text-xs text-slate-300 mt-4 space-y-1">
+                        <li>• Caimento de teto esportivo</li>
+                        <li>• Porta-malas de 415 Litros</li>
+                        <li>• 0 a 100 km/h em 9,9s</li>
+                    </ul>
+                    <div class="mt-6 flex items-center justify-between">
+                        <span class="text-lg font-bold text-white">R$ 160.790</span>
+                        <button onclick="solicitarInfo('VW Nivus Highline')" class="bg-slate-800 hover:bg-blue-600 text-xs text-white px-3 py-2 rounded transition">Tenho Interesse</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chevrolet Tracker Premier -->
+            <div class="bg-slate-900 rounded-xl overflow-hidden card-glow">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">Chevrolet</span>
+                    <h3 class="text-xl font-bold text-white mt-1">Tracker Premier</h3>
+                    <p class="text-slate-400 text-sm mt-2">1.2 Turbo Flex (141 cv) | Teto Solar Panorâmico</p>
+                    <ul class="text-xs text-slate-300 mt-4 space-y-1">
+                        <li>• Central MyLink 11" & Painel Digital</li>
+                        <li>• Alerta de Colisão + Frenagem Autônoma</li>
+                        <li>• Assistente de Estacionamento</li>
+                    </ul>
+                    <div class="mt-6 flex items-center justify-between">
+                        <span class="text-lg font-bold text-white">R$ 177.990</span>
+                        <button onclick="solicitarInfo('Chevrolet Tracker Premier')" class="bg-slate-800 hover:bg-blue-600 text-xs text-white px-3 py-2 rounded transition">Tenho Interesse</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fiat Fastback Abarth -->
+            <div class="bg-slate-900 rounded-xl overflow-hidden card-glow">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">Fiat</span>
+                    <h3 class="text-xl font-bold text-white mt-1">Fastback Powered by Abarth</h3>
+                    <p class="text-slate-400 text-sm mt-2">SUV Cupê Esportivo | V. Máx: 220 km/h</p>
+                    <ul class="text-xs text-slate-300 mt-4 space-y-1">
+                        <li>• Porta-malas Gigante de 600 Litros</li>
+                        <li>• Motorização Esportiva Abarth</li>
+                        <li>• Design Imponente</li>
+                    </ul>
+                    <div class="mt-6 flex items-center justify-between">
+                        <span class="text-lg font-bold text-white">R$ 161.000</span>
+                        <button onclick="solicitarInfo('Fiat Fastback Abarth')" class="bg-slate-800 hover:bg-blue-600 text-xs text-white px-3 py-2 rounded transition">Tenho Interesse</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Dados Econômicos da Empresa -->
+    <section id="economia" class="py-16 px-4 bg-slate-900 border-t border-b border-slate-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-extrabold text-white">Informações Econômicas</h2>
+                <p class="text-slate-400">Transparência e viabilidade financeira da Apex Auto</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="p-6 bg-[#0b0f19] rounded-xl border border-slate-800">
+                    <h4 class="text-slate-400 text-sm uppercase">Receita Bruta</h4>
+                    <p class="text-3xl font-extrabold text-blue-500 mt-2">R$ 1.5 Mi</p>
+                    <p class="text-xs text-slate-400 mt-1">A cada dezena de carros vendidos</p>
+                </div>
+                <div class="p-6 bg-[#0b0f19] rounded-xl border border-slate-800">
+                    <h4 class="text-slate-400 text-sm uppercase">Margem de Lucro</h4>
+                    <p class="text-3xl font-extrabold text-green-500 mt-2">14%</p>
+                    <p class="text-xs text-slate-400 mt-1">Lucro estimado por veículo vendido</p>
+                </div>
+                <div class="p-6 bg-[#0b0f19] rounded-xl border border-slate-800">
+                    <h4 class="text-slate-400 text-sm uppercase">Política Tributária</h4>
+                    <p class="text-xl font-bold text-yellow-500 mt-2"></p>
+                    <p class="text-xs text-slate-400 mt-1">Ajuste devido a impostos governamentais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por Que Escolher -->
+    <section id="porque" class="py-16 px-4 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-extrabold text-white text-center mb-12">Por que escolher a Apex Auto?</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                <div class="text-blue-500 text-2xl font-bold mb-2">01.</div>
+                <h3 class="text-lg font-bold text-white mb-2">Garantia de Qualidade</h3>
+                <p class="text-slate-400 text-sm">Todos os nossos veículos passam por revisões detalhadas antes de irem para o showroom.</p>
+            </div>
+            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                <div class="text-blue-500 text-2xl font-bold mb-2">02.</div>
+                <h3 class="text-lg font-bold text-white mb-2">Condições Exclusivas</h3>
+                <p class="text-slate-400 text-sm">Taxas de financiamento competitivas e valuation justo do seu seminovo na troca.</p>
+            </div>
+            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                <div class="text-blue-500 text-2xl font-bold mb-2">03.</div>
+                <h3 class="text-lg font-bold text-white mb-2">Atendimento Personalizado</h3>
+                <p class="text-slate-400 text-sm">Consultoria focada no modelo ideal para a sua necessidade diária ou viagens.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-8 text-center text-slate-500 text-xs">
+        <p>© 2026 Apex Auto - Projeto feito para a APR2. Criado por Felipe.</p>
+    </footer>
+
+    <!-- JavaScript Simples para Interatividade -->
+    <script>
+        function solicitarInfo(nomeCarro) {
+            alert(`Obrigado pelo interesse no ${nomeCarro}!`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iguazu Falls - more information</title>
+    <style>
+	#information_picture {
+		color: rgb(201, 156, 52);
+		font: normal 20px Arial;
+	}
+	#pessoas {
+		margin-left: 100px;
+	}
+	#goback {
+		font: normal 30px Arial;
+		margin-top: 250px;
+	}
+	body {
+ 	background-color: rgb(0, 100, 150);
+	}
+	#Information {
+	font: normal 30px Arial;
+     color: rgb(201, 156, 52);
+	}
+	#General {
+	font: normal 50px Arial;
+	color: rgb(161, 188, 11)
+	}
+	#Access {
+	font: normal 50px Arial;
+	color: rgb(161, 188, 11)
+	}
+	#Location {
+	font: normal 30px Arial;
+	color: rgb(201, 156, 52)
+	}
+	#imagens_pessoas {
+		margin-right: 10px;
+	}
+    </style>
+</head>
+<body>
+    <h1 id="General">General information</h1>
+    <p id="Information">
+    The <strong>Iguazu Falls</strong> are big waterfalls of Iguazu River on the border of Misiones and the Brazilian state of Paraná. they make up one of the largest waterfall system in the world. The name "Iguazu"
+    comes from the Guarani or Tupi words meaning "water."
+	</p>
+
+     <h1 id="Access">The location</h1>
+     <p id="Location">The waterfalls can be reached from two main towns: Puerto Iguazú, in Argentina and in Foz do Iguaçu, in Brasil, as well as from Ciudad del Este, Paraguay, on the other side of the Paraná River from Foz do Iguaçu, each of those three cities having commercial airports.
+	</p>
+	<img src="/HTML/Cataratas/Iguazu_Décembre_2007_-_Panorama_7.jpg" alt="foto" id="imagem_pessoas">
+	<img src="/HTML/Cataratas/Parque_Nacional_do_Iguaçú_-_Iguaçu_National_Park_-_Bilheterias_-_Ticket_toll_(13932942577).jpg" alt="" id="pessoas">
+
+	<p id="information_picture">Image of people visiting the Iguazu Falls and buying tickets to entry there.</p>
+	
+    <div>
+	<button id="goback">Go back to the main page</button>
+	</div> 
+    
+	<script>
+	let voltar = window.document.getElementById('goback')
+
+	goback.addEventListener('click', function(){
+	window.location.href = 'index.html'
+	});
+
+     </script>
+</body>
+</html>
